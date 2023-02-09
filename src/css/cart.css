@@ -1,0 +1,21 @@
+@tailwind components;
+
+.cart {
+    @apply absolute bg-white z-10 top-20 right-0 min-w-[300px] p-4;
+}
+
+.cart .cart-info {
+    @apply text-green flex flex-col gap-1 text-lg pb-3 pt-2;
+}
+
+.cart img {
+    @apply mb-3;
+}
+
+.cart .remove_btn {
+    @apply hover:cursor-pointer w-[20px] h-[20px];
+}
+
+.cart-wrapper-item > div {
+    @apply flex items-center justify-between;
+}

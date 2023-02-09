@@ -1,0 +1,13 @@
+@tailwind components;
+
+.btn {
+    @apply bg-btn_color text-green py-5 px-7 text-center duration-300 block hover:bg-transparent hover:text-white hover:duration-300;
+}
+
+.btn_arrow {
+    @apply bg-transparent text-white flex items-center gap-3 hover:underline;
+}
+
+.btn_flower {
+    @apply bg-transparent py-2 px-5 border border-solid border-green text-green duration-300 hover:duration-300 hover:bg-green hover:cursor-pointer hover:text-white;
+}

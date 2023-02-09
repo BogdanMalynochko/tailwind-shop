@@ -1,0 +1,9 @@
+@tailwind components;
+
+.counter_item, .counter_number {
+    @apply bg-green text-white p-[8px] hover:cursor-pointer duration-300;
+}
+
+.counter_item {
+    @apply hover:text-green hover:bg-transparent hover:duration-300;
+}

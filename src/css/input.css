@@ -1,0 +1,18 @@
+@import "headings.css";
+@import "buttons.css";
+@import "counter.css";
+@import "cart.css";
+@import "modal.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-montserrat bg-green;
+}
+
+.linear-gradient {
+    @apply absolute w-full h-full;
+
+    background: linear-gradient(178.62deg, rgba(46, 64, 61, 0) 25.35%, #234A45 91.06%);
+}

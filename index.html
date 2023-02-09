@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/output.css">
+</head>
+<body>
+    <header class="py-12 bg-green">
+        <div class="container flex justify-between">
+            <ul class="flex items-center gap-10">
+                <li class="text-white"><a href="">Shop</a></li>
+                <li class="text-white"><a href="">Products</a></li>
+                <li class="text-white"><a href="">Fertilizer</a></li>
+                <li class="text-white"><a href="">Guide</a></li>
+            </ul>
+            <div class="w-7/24">
+                <img src="src/img/logo.svg" alt="">
+            </div>
+            <ul class="flex relative gap-5 items-center">
+                <a href="" class="text-white"><li><img src="src/img/search.svg" alt=""></li></a>
+                <a href="" class="cart_btn text-white"><li><img src="src/img/cart.svg" alt=""></li></a>
+                <div class="cart hidden">
+                    <h4 class="text-green text-2xl pb-2">Your Order</h4>
+                    <hr>
+                </div>
+            </ul>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>Some text in the Modal..</p>
+              <span class="close">&times;</span>
+            </div>
+        </div>
+    </header>
+    <section class="bg-green pt-12 pb-24">
+        <div class="container flex justify-between items-center">
+            <div class="flex w-9/24 flex-col gap-8">
+                <h1 class="h1-title">Happiness blooms from within</h1>
+                <p class="text-white font-light">Our environment, the world in which we live and work, is a mirror of our attitudes and expectations.</p>
+                <div class="flex items-center gap-10">
+                    <a class="btn" href="">Shop now</a>
+                    <a class="btn_arrow" href="">
+                        Explore plants
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4243 5.42427C16.6586 5.18995 16.6586 4.81005 16.4243 4.57574L12.6059 0.75736C12.3716 0.523046 11.9917 0.523046 11.7574 0.75736C11.523 0.991675 11.523 1.37157 11.7574 1.60589L15.1515 5L11.7574 8.39411C11.523 8.62843 11.523 9.00833 11.7574 9.24264C11.9917 9.47696 12.3716 9.47696 12.6059 9.24264L16.4243 5.42427ZM-5.24537e-08 5.6L16 5.6L16 4.4L5.24537e-08 4.4L-5.24537e-08 5.6Z" fill="#EFF7F5"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+                <div class="flex relative gap-1">
+                    <div class="flex z-10 gap-1 flex-col">
+                        <a href="" class="relative">
+                            <div class="absolute bg-green text-white py-2 px-4 top-[15px] left-[15px]">New</div>
+                            <img src="src/img/flower.jpg" alt="">
+                        </a>
+                        <a href="" class="relative">
+                            <div class="absolute bg-green text-white py-2 px-4 top-[15px] left-[15px]">Popular</div>
+                            <img src="src/img/flower_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="relative">
+                        <span class="linear-gradient"></span>
+                        <div class="absolute bg-green text-white py-2 px-4 top-[15px] left-[15px]">Featured</div>
+                        <img src="src/img/flower_3.jpg" alt="">
+                    </a>
+                    <img class="absolute -bottom-12 -left-10" src="src/img/pattern.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white">
+        <div class="container">
+            <h2 class="h2-title">Featured</h2>
+            <div class="flower_shop grid grid-cols-4 gap-y-16 gap-6 py-12">
+                <div class="item flex flex-col gap-5" data-id="1">
+                    <img src="src/img/flowers-shop/peperomia.jpg" alt="">
+                    <div class="flex justify-between">
+                        <h3 class="flower-title">Peperomia Ginny</h3>
+                        <span class="cost text-green text-xl">25</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="counter flex text-xl">
+                            <div class="counter_item" data-action="plus">+</div>
+                            <div class="counter_number">1</div>
+                            <div class="counter_item" data-action="minus">-</div>
+                        </div>
+                        <div class="btn_flower" href="">Buy</div>
+                    </div>
+                </div>
+                <div class="item flex flex-col gap-5" data-id="2">
+                    <img src="src/img/flowers-shop/nest.jpg" alt="">
+                    <div class="flex justify-between">
+                        <h3 class="flower-title">Bird’s Nest Fern</h3>
+                        <span class="cost text-green text-xl">45$</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="counter flex text-xl">
+                            <div class="counter_item" data-action="plus">+</div>
+                            <div class="counter_number">1</div>
+                            <div class="counter_item" data-action="minus">-</div>
+                        </div>
+                        <div class="btn_flower" href="">Buy</div>
+                    </div>
+                </div>
+                <div class="item flex flex-col gap-5" data-id="3">
+                    <img src="src/img/flowers-shop/large.jpg" alt="">
+                    <div class="flex justify-between">
+                        <h3 class="flower-title">Large Majesty Palm</h3>
+                        <span class="cost text-green text-xl">52$</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="counter flex text-xl">
+                            <div class="counter_item" data-action="plus">+</div>
+                            <div class="counter_number">1</div>
+                            <div class="counter_item" data-action="minus">-</div>
+                        </div>
+                        <div class="btn_flower" href="">Buy</div>
+                    </div>
+                </div>
+                <div class="item flex flex-col gap-5" data-id="4">
+                    <img src="src/img/flowers-shop/pet.jpg" alt="">
+                    <div class="flex justify-between">
+                        <h3 class="flower-title">Pet Friendly Plant</h3>
+                        <span class="cost text-green text-xl">30$</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="counter flex text-xl">
+                            <div class="counter_item" data-action="plus">+</div>
+                            <div class="counter_number">1</div>
+                            <div class="counter_item" data-action="minus">-</div>
+                        </div>
+                        <div class="btn_flower" href="">Buy</div>
+                    </div>
+                </div>
+                <div class="item flex hidden flex-col gap-5" data-id="5">
+                    <img src="src/img/flowers-shop/duo.jpg" alt="">
+                    <div class="flex justify-between">
+                        <h3 class="flower-title">Duo Friendly Plant</h3>
+                        <span class="cost text-green text-xl">35$</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="counter flex text-xl">
+                            <div class="counter_item" data-action="plus">+</div>
+                            <div class="counter_number">1</div>
+                            <div class="counter_item" data-action="minus">-</div>
+                        </div>
+                        <div class="btn_flower" href="">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <a class="view_all text-green text-2xl hover:underline" href="">view all</a>
+        </div>
+    </section>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@tailwind components;
+
+.modal {
+    @apply fixed hidden z-20 pt-24 left-0 top-0 w-full h-full overflow-auto;
+
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal .modal-content {
+    @apply bg-[#fefefe] flex justify-between m-auto p-5 w-3/5;
+}
+
+.modal .modal-content .close {
+    @apply hover:cursor-pointer
+}

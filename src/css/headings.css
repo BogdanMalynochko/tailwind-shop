@@ -1,0 +1,13 @@
+@tailwind components;
+
+.h1-title {
+    @apply text-6xl text-white leading-[72px];
+}
+
+.h2-title {
+    @apply text-green text-4xl;
+}
+
+.flower-title {
+    @apply text-green text-xl;
+}
